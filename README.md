@@ -34,6 +34,7 @@ only for 微信助手<br>
 以下操作都是在“微信助手”ChatGPT中操作：
 1. 将你的代理地址填写到“代理地址”栏。（[https://xxx.netlify.app](https://xxx.netlify.app)）
 2. “APIKey”中填写对应的API Key，在“模型”中按下表选择或填写。
+3. 360AI支持文生图功能，在聊天中，话术为：画xxxxxxxx，AI则会返回一个图片链接。比如：画一个蓝天白云的图片
 
 | AI       | APIKey      | 模型            |
 |-----------|-------------|-----------------|
@@ -46,7 +47,6 @@ only for 微信助手<br>
 | Moonshot Kimi | Kimi API Key  | 手动输入，填写：moonshot-v1-8k 或 moonshot-v1-32k |
 | Claude3   | Claude3 API Key | 手动输入，填写：claude-3-opus-20240229 | 
 | 360智脑   | 360 API Key | 手动输入，填写：360gpt-pro |
-3. 360AI支持文生图功能，在聊天中，话术为：画xxxxxxxx，AI则会返回一个图片链接。比如：画一个蓝天白云的图片
 
 ## 特别鸣谢
 - 部分代码参考了懒猫提供的Gemini.zip，[懒猫插件交流](https://t.me/maogroup)
