@@ -8,26 +8,38 @@ only for 微信助手<br>
 2. 来到我这个仓库，点击仓库右上角的 "Fork" 按钮，创建你自己的分支。
 
 ## 部署到 Netlify
-1. 用 $\color{red}{邮箱}$ 注册[Netlify 帐号](https://app.netlify.com/signup/)。<br>
+1. 用 邮箱 注册[Netlify 帐号](https://app.netlify.com/signup/)。<br>
 注意：<br>
 1.1 Github授权登录的方式可能会引起身份审核；<br>
 1.2 邮箱注册也有可能引起身份审核，尝试换邮箱地址，比如国外的邮箱；<br>
 1.3 netlify.com和netlify.app的分流规则，建议设置为直连，不用魔法。<br>
+
 <img src="./images/rules_netlify.jpg" width="400px">
+
 2. 在 [Netlify](https://app.netlify.com) 上创建一个新Site(Add new site)。<br>
+
 3. 点击弹出的窗口 "Import an existing project" 。<br>
+
 4. Deploy with GitHub.<br>
+
 5. 按提示授权 GitHub 到你的 Netlify。<br>
+
 6. 选择你刚刚fork的项目<br>
+
 7. "Add environment variables" 创建<B>WXID_ARRAY</B>这个环境变量（只创建一个，别重复），values值为：微信ID1,微信ID2,微信ID3 <br>
 ---替换为你需要授权的微信ID，不同的ID需要用英文逗号隔开,最后一个微信ID后面不要加逗号。不需要加引号； <br>
 ---如果你的微信ID是wxid_abcdefg,你就填写wxid_abcdefg,别删掉了'wxid_'; <br>
 ---如果你的微信ID是lambous就填写lambous、开头别加‘wxid’！ <br>
 ---以此类推可以添加很多不止三个的。比如 wxid_abcdefg,lambous,yourxxx,abdcedf <br>
+
 8. Deploy AiChatHelper
+
 9. 等待部署完成，你将获得一个二级域名，这就是你的代理地址，记住它。（xxx.netlify.app；xxx可自定义，需要带上前缀https&#58;&#47;&#47;）
+
 10. 以后在GitHub修改你的代码，Netlity会自动更新代码并重新部署。
+
 11. 第7步的环境变量WXID_ARRAY是在初次部署之前填写的。如果部署成功后再次修改环境变量WXID_ARRAY的值，请重新部署。
+
 <img src="./images/deploySite.png" width="400px"><img src="./images/configure-builds-retry-deploy-dropdown.png" width="400px">
 
 ## 使用方法
